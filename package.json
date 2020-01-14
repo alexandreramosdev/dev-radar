@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "axios": "^0.19.1"
-  }
+  "name": "dev-radar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alexandreramosdev/dev-radar.git",
+  "author": "Alexandre Ramos dos Santos <alexandresantos84@gmail.com>",
+  "license": "MIT"
 }
