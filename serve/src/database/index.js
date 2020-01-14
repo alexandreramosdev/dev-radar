@@ -2,7 +2,8 @@ import mongoose from 'mongoose'
 
 mongoose.connect('mongodb+srv://devradar-admin:S2TSaFCkYRZi4ja0@devradar-mm9as.mongodb.net/devradar?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true
 })
 mongoose.Promise = global.Promise
 
