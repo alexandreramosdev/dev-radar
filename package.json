@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:alexandreramosdev/dev-radar.git",
   "author": "Alexandre Ramos dos Santos <alexandresantos84@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^5.0.0"
+  }
 }
