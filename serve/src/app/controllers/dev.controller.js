@@ -1,6 +1,8 @@
 import github from '../../services/github'
 import Dev from '../models/dev.model'
 import parseStringAsArray from '../../utils/parseStringAsArray'
+import { findConnections, sendMessage } from '../../websocket'
+
 
 export default {
   async index(req, res) {
@@ -33,6 +35,10 @@ export default {
         techs: techsArray,
         location
       })
+
+      const sendSocketMessageTo = findConnections({ latitude, longitude }, techsArray)
+
+      sendMessage(sendSocketMessageTo, 'new-dev', dev)
     }
 
     res.json(dev)

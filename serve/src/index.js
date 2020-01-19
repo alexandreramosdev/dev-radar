@@ -1,7 +1,11 @@
+import http from 'http'
+
 import app from './app'
+import { setupWebsocket } from './websocket'
 
-app.listen(process.env.PORT | 3333)
+const server = http.Server(app)
 
+setupWebsocket(server)
 
+server.listen(process.env.PORT | 3333)
 
-//S2TSaFCkYRZi4ja0

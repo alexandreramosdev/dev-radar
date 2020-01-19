@@ -22,6 +22,6 @@ export default {
       }
     })
 
-    res.json({ devs })
+    res.json(devs)
   }
 }
